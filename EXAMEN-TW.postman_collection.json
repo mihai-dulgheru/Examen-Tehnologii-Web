@@ -1,0 +1,407 @@
+{
+	"info": {
+		"_postman_id": "7a2f88ec-aafc-42e2-81ab-e37abfa0594d",
+		"name": "EXAMEN-TW",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "[GET] Sync",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/sync",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"sync"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] Favourite lists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/favouriteLists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"favouriteLists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] Favourite lists with filtering",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/favouriteLists?descriere=1&data=2022-02-12",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"favouriteLists"
+					],
+					"query": [
+						{
+							"key": "descriere",
+							"value": "1"
+						},
+						{
+							"key": "data",
+							"value": "2022-02-12"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] Favourite lists with sorting",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/favouriteLists?sortBy=data&DESC=true",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"favouriteLists"
+					],
+					"query": [
+						{
+							"key": "sortBy",
+							"value": "data"
+						},
+						{
+							"key": "DESC",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] A favourite list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/favouriteLists/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"favouriteLists",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] Add a favourite list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descriere\": \"descriere\",\r\n    \"data\": \"2022-02-12\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/favouriteLists",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"favouriteLists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[PUT] Update a favourite list",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descriere\": \"descriere modificata\",\r\n    \"data\": \"2022-02-12\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/favouriteLists/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"favouriteLists",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[DELETE] Delete a favourite list",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/favouriteLists/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"favouriteLists",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] All videos in a favourite list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/favouriteLists/1/videos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"favouriteLists",
+						"1",
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] A video",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/favouriteLists/1/videos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"favouriteLists",
+						"1",
+						"videos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] Add a video",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descriere\": \"descriere video 1\",\r\n    \"titlu\": \"titlu video 1\",\r\n    \"url\": \"http://url-1.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/favouriteLists/1/videos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"favouriteLists",
+						"1",
+						"videos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[PUT] Update a video",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"descriere\": \"descriere modificata\",\r\n    \"titlu\": \"titlu modificat\",\r\n    \"url\": \"http://url.com\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/favouriteLists/1/videos/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"favouriteLists",
+						"1",
+						"videos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[DELETE] Delete a video",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/favouriteLists/1/videos/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"favouriteLists",
+						"1",
+						"videos",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[POST] Import",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  {\r\n    \"descriere\": \"O descriere\",\r\n    \"data\": \"2022-02-13\",\r\n    \"videos\": [\r\n      {\r\n        \"descriere\": \"descriere video\",\r\n        \"titlu\": \"titlu video\",\r\n        \"url\": \"http://foo.com\"\r\n      },\r\n      {\r\n        \"descriere\": \"alta descriere video\",\r\n        \"titlu\": \"alt titlu video\",\r\n        \"url\": \"http://foo2.com\"\r\n      }\r\n    ]\r\n  },\r\n  {\r\n    \"descriere\": \"O alta descriere\",\r\n    \"data\": \"2022-02-14\",\r\n    \"videos\": []\r\n  }\r\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/import",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"import"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[GET] Export",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/export",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"export"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
