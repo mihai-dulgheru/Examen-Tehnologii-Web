@@ -1,0 +1,23 @@
+[
+  {
+    "descriere": "O descriere",
+    "data": "2022-02-13",
+    "videos": [
+      {
+        "descriere": "descriere video",
+        "titlu": "titlu video",
+        "url": "http://foo.com"
+      },
+      {
+        "descriere": "alta descriere video",
+        "titlu": "alt titlu video",
+        "url": "http://foo2.com"
+      }
+    ]
+  },
+  {
+    "descriere": "O alta descriere",
+    "data": "2022-02-14",
+    "videos": []
+  }
+]
