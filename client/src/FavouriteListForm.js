@@ -16,11 +16,11 @@ function FavouriteListForm (props) {
 
   return (
     <div className='form'>
-      <div className='input-descriere'>
-        <input type='text' placeholder='descriere' ref={refDescriere} />
+      <div className='input-description'>
+        <input type='text' placeholder='description' ref={refDescriere} />
       </div>
-      <div className='input-data'>
-        <input type='date' placeholder='data' ref={refData} />
+      <div className='input-date'>
+        <input type='date' ref={refData} />
       </div>
       <div className='add-button'>
         <button className='button-primary' onClick={addFavouriteList}>

@@ -12,8 +12,8 @@ function FavouriteList (props) {
 
   return (
     <div className='favouriteList'>
-      <div className='descriere'>{item.descriere}</div>
-      <div className='data'>{new Date(item.data).toLocaleDateString()}</div>
+      <div className='description'>{item.descriere}</div>
+      <div className='date'>{new Date(item.data).toLocaleDateString()}</div>
       <div className='buttons'>
         <button className='button-secondary' onClick={() => onSelect()}>
           Edit

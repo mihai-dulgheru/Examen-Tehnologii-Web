@@ -1,6 +1,7 @@
 .table {
   display: flex;
   flex-flow: column;
+  margin-top: 16px;
 }
 
 .header,
@@ -16,12 +17,22 @@
   justify-content: left;
 }
 
-.header-descriere,
+.header-description,
 .header-url,
-.header-data {
+.header-date {
   width: calc((100%-64px) / 3);
 }
 
 .meeting-list {
   flex-flow: column;
+}
+
+.import-export {
+  margin-top: 16px;
+}
+
+.import-export textarea {
+  width: 40vw;
+  height: 20vh;
+  overflow: auto;
 }

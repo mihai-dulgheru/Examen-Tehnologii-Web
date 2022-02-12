@@ -4,8 +4,8 @@
   justify-content: space-evenly;
 }
 
-.form .input-descriere,
-.form .input-data,
+.form .input-description,
+.form .input-date,
 .form .add-button {
   width: calc((100%-64px) / 3);
 }

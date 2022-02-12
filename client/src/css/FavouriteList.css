@@ -4,9 +4,9 @@
   justify-content: space-evenly;
 }
 
-.descriere,
+.description,
 .url,
-.data,
+.date,
 .buttons {
   width: calc((100%-64px) / 3);
 }

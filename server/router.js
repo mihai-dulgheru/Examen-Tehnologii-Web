@@ -13,7 +13,7 @@ router
       whereClause.descriere = { [Op.like]: `%${descriere}%` }
     }
     if (data) {
-      whereClause.data = { [Op.gte]: new Date(data) }
+      whereClause.data = { [Op.eq]: new Date(data) }
     }
     try {
       const favouriteLists = await FavouriteList.findAll({

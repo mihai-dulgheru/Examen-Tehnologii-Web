@@ -51,6 +51,12 @@ button {
   background-color: #ef4445;
 }
 
+.button-sort {
+  background-color: #5e6d83;
+  min-width: 32px;
+  height: fit-content;
+}
+
 button:hover {
   opacity: 1;
 }

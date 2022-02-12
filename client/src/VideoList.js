@@ -55,8 +55,8 @@ function VideoList () {
       <div className='video-list'>
         <h1>Videos:</h1>
         <div className='header-videos'>
-          <div>Descriere</div>
-          <div>Titlu</div>
+          <div>Description</div>
+          <div>Title</div>
           <div>Url</div>
         </div>
         {videos.map((element) => (
@@ -64,11 +64,11 @@ function VideoList () {
         ))}
       </div>
       <div className='video-form'>
-        <div className='video-form-input-descriere'>
-          <input type='text' placeholder='descriere' ref={refDescriere} />
+        <div className='video-form-input-description'>
+          <input type='text' placeholder='description' ref={refDescriere} />
         </div>
-        <div className='input-titlu'>
-          <input type='text' placeholder='titlu' ref={refTitlu} />
+        <div className='input-title'>
+          <input type='text' placeholder='title' ref={refTitlu} />
         </div>
         <div className='input-url'>
           <input type='url' placeholder='url' ref={refUrl} />
