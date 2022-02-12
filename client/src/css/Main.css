@@ -1,0 +1,8 @@
+.main {
+  padding: 0px 32px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}

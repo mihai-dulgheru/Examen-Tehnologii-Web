@@ -1,0 +1,19 @@
+.update-form {
+  width: 40%;
+  margin: 0px auto;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr) auto;
+  row-gap: 8px;
+}
+
+.update-form div {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  column-gap: 8px;
+  padding: 0px 4px;
+}
+
+.update-form:last-child button {
+  width: max-content;
+  align-items: flex-end;
+}

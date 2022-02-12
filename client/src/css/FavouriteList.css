@@ -1,0 +1,12 @@
+.favouriteList {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.descriere,
+.url,
+.data,
+.buttons {
+  width: calc((100%-64px) / 3);
+}

@@ -1,0 +1,27 @@
+.table {
+  display: flex;
+  flex-flow: column;
+}
+
+.header,
+.meeting-list {
+  display: flex;
+}
+
+.header {
+  font-size: 1.2em;
+  height: max-content;
+  display: flex;
+  flex-flow: row;
+  justify-content: left;
+}
+
+.header-descriere,
+.header-url,
+.header-data {
+  width: calc((100%-64px) / 3);
+}
+
+.meeting-list {
+  flex-flow: column;
+}
